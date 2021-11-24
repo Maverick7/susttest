@@ -1,0 +1,143 @@
+.app_card {
+  margin: 60px auto;
+  width: 40%;
+  background-color: #fff;
+  box-shadow: 4px 4px 12px #dddddd;
+  border: 1px solid transparent;
+  border-radius: 0px 20px;
+  padding: 18px;
+  /* max-height: 500px;
+  overflow-y: auto; */
+}
+/* scrollbar css */
+.app_card::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.app_card::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.02);
+  box-shadow: inset 0.5px 0px 0px rgba(0, 0, 0, 0.07),
+    inset 1px 0px 0px rgba(0, 0, 0, 0.02),
+    inset -1px 0px 0px rgba(0, 0, 0, 0.02),
+    inset -0.5px 0px 0px rgba(0, 0, 0, 0.07);
+}
+
+/* Handle */
+.app_card::-webkit-scrollbar-thumb {
+  /* background: linear-gradient(90deg, #2957a0 0%, #23b7d9 100%); */
+  background:rgb(219, 218, 218);
+
+  /* height: 10px; */
+  border-radius: 8px 8px 8px 8px;
+  cursor: pointer;
+}
+
+/* Handle on hover */
+.app_card::-webkit-scrollbar-thumb:hover {
+  /* background: #b30000; */
+  /* background: linear-gradient(90deg, #3666b3 0%, #004a5a 100%); */
+  /* background: linear-gradient(90deg, #7fb0ff 0%, #54e0ff 100%); */
+  background:rgb(134, 134, 134);
+
+
+}
+.app_card_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.app_card_head {
+  margin: 10px 0px;
+}
+.app_card_head h3 {
+  font-family: "Varela Round", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 40px;
+  color: #212529;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.app_card_head p {
+  font-family: "Varela Round", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #27364b;
+  margin-bottom: 5px;
+}
+.app_card_body {
+  /* margin: 10px 0px; */
+  width: 100%;
+}
+.input_field label {
+  font-family: "Varela Round", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #27364b;
+}
+/* forgot pwd link */
+.fp_link a {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7b61ff;
+  text-decoration: underline;
+}
+.app_card_bottom {
+  margin: 10px 0px;
+}
+.app_card_bottom .link {
+  text-decoration: underline;
+}
+
+/* error css */
+.error_wrap{
+position: relative;
+}
+.error_wrap .error_text{
+color: #dc3545 !important;
+font-family: "Lato";
+font-weight: 600;
+margin-top: 5px;
+margin-bottom: 0;
+}
+
+/* error box */
+.app_error_box{
+position: relative;
+}
+.app_error_wrap p{
+  color: #dc3545 !important;
+  font-family: "Lato";
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 787px) {
+  .app_card {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .app_card {
+    width: 85%;
+    margin: 40px auto;
+    padding: 16px;
+  }
+  .app_card_head h3 {
+    font-size: 28px;
+  }
+}

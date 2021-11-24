@@ -1,0 +1,117 @@
+.challenge_main_row {
+  padding: 0px;
+  height: 100%;
+}
+.challenge_parallax_bg {
+  position: relative;
+  height: 100%;
+}
+.challenge_parallax_bg::before {
+  content: "";
+  background-image: url(../public/images/ic_bg-freame.svg);
+  background-color: #f4f4ff;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: 100% 100%;
+  position: absolute;
+  opacity: 0.8;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+}
+.challenge_content_col {
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.challenge_content_wrap {
+  /* height: 100%; */
+  position: relative;
+  margin: auto;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.challenge_box h2 {
+  font-family: "Varela Round", sans-serif;
+  color: #000;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 58px;
+}
+.challenge_card_wrap {
+  width: 75%;
+  margin: 20px auto 20px auto;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 100px;
+}
+.challenge_box_container {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.challenge_box_container .challenge_box_wrapper {
+}
+.challenge_box {
+  /* border: 1px solid #000000; */
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.challenge_box {
+  color: #000;
+}
+.challenge_box_container .challenge_box_wrapper {
+  padding: 15px;
+}
+
+@media only screen and (max-width: 993px) {
+  .challenge_content_col {
+    height: unset !important;
+    margin: 20px 0px;
+  }
+  .challenge_card_wrap {
+    position: relative !important;
+    top: unset !important;
+  }
+  .challenge_box_container .challenge_box_wrapper {
+    padding: 0px;
+  }
+  .challenge_box_container {
+    padding: 0 20px;
+  }
+}
+@media only screen and (max-width: 769px) {
+  .challenge_content_wrap {
+    width: 90%;
+  }
+  .challenge_card_wrap {
+    width: 90%;
+  }
+  .challenge_box_container {
+    padding: 0 10px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .challenge_content_wrap {
+    width: 100%;
+  }
+  .challenge_card_wrap {
+    width: 100%;
+  }
+  .challenge_box_container {
+    padding: 0;
+  }
+}

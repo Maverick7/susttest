@@ -1,0 +1,22 @@
+:root {
+  --background-color: #e5e5e5;
+
+  --box-color: #ffffff;
+
+  --primary-gradient-color:linear-gradient(90deg, #2957A0 0%, #23B7D9 100%);
+
+  --primary-color: #f03782;
+
+  --primary-color2: #ebf7f3;
+
+  --title-color: #212529;
+
+  --text-color: #000000;
+
+  /*submission page*/
+
+  --box-border: #94a3b8;
+}
+div {
+  color: red;
+}

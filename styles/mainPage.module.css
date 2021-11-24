@@ -1,0 +1,42 @@
+.main_bg_wrap {
+  position: relative;
+  /* fixed navbar padding */
+  padding-top: 100px;
+  background-image: url(../public/images/ic_bg.png);
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+  opacity: 1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.bgwrap {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+}
+.bgrow {
+  width: 40%;
+  max-width: 1080px;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  z-index: 5;
+}
+
+
+
+/* media queries for mobile view font */
+/* @media (max-width: 787px) {
+
+}
+@media (max-width: 576px) {
+
+} */

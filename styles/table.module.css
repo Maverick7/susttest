@@ -1,0 +1,114 @@
+.maincontainer {
+  /* background:url("../public/images/Bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; */
+  /* background-color: rgb(148, 238, 241); */
+  height: 100vh;
+}
+.dashboard_parallax_bg {
+    position: relative;
+    height: 100%;
+  }
+.dashboard_parallax_bg::before {
+    content: "";
+    background-image: url(../public/images/ic_bg-freame.svg);
+    background-color: #f4f4ff;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: 100% 100%;
+    position: absolute;
+    opacity: 0.8;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+  }
+.maintxt p {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.subtxt p {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+.chtabel_head {
+  border: none !important;
+}
+.tableheading {
+  background: linear-gradient(90deg, #2957a0 0%, #23b7d9 100%);
+  color: #ffffff;
+}
+.tablebody tr:nth-child(odd) {
+  background-color: #fff;
+}
+.tablebody tr:nth-child(even) {
+  background-color:  #EBE4E8;;
+}
+.buttonclass {
+  background: linear-gradient(90deg, #2957a0 0%, #23b7d9 100%);
+  color: #ffffff;
+  border-radius: 6px;
+  letter-spacing: 2px;
+  border-width: 0;
+  font-size: 14px;
+}
+.flex_row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.placeholder_container {
+  margin-bottom: 10px;
+}
+.placeholder_wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  height: 100%;
+  background-color: white;
+  padding: 15px;
+}
+.placeholder_wrap .placeholder_text p {
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 425px) {
+  .imgclass {
+    width: 80vw;
+  }
+  .buttonclass {
+    min-width: 90px;
+    height: 30px;
+  }
+  .largetext1 {
+    font-size: 35px;
+  }
+  .largetext2 {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 426px) {
+  .imgclass {
+    width: 40vw;
+  }
+  .buttonclass {
+    min-width: 100px;
+    height: 30px;
+  }
+  .largetext1 {
+    font-size: 48px;
+  }
+  .largetext2 {
+    font-size: 28px;
+  }
+}

@@ -1,0 +1,107 @@
+
+/* text input field css */
+.dynamic_input_field .list-group .list-group-item .text-danger{
+font-weight: bold;
+}
+.form_input{
+    margin-bottom: 0;
+}
+/* select field css */
+.form_select{
+    margin-bottom: 0;
+}
+
+/*password input field css */
+
+.pwd_btn{
+background:transparent;
+border-left-color:transparent;
+/* border-right-color:transparent; */
+border-top-right-radius:0px;
+border-bottom-right-radius:0px;
+/* border:transparent; */
+}
+.pwd_btn .pwd_img:active{
+    transform: translateY(1px);
+}
+
+.hint_btn{
+    background:#63C29D;
+    border-left-color:transparent;
+    border-right-color:transparent;
+    border-top-right-radius:5px;
+border-bottom-right-radius:5px;
+}
+.hint_btn span{
+    font-size: 19px;
+    color:#fff;
+}
+.hint_btn span:active{
+    transform: translateY(1px);
+}
+
+
+.custom_control.ios_switch {
+    --color: #4cd964;
+    padding-left: 0;
+}
+.custom_control.ios_switch .ios_switch_control_input {
+    display: none;
+}
+.custom_control.ios_switch .ios_switch_control_input:active ~ .ios_switch_control_indicator::after {
+    width: 20px;
+}
+.custom_control.ios_switch .ios_switch_control_input:checked ~ .ios_switch_control_indicator {
+    border: 10px solid var(--color);
+}
+.custom_control.ios_switch .ios_switch_control_input:checked ~ .ios_switch_control_indicator::after {
+    top: -8px;
+    left: 4px;
+}
+.custom_control.ios_switch .ios_switch_control_input:checked:active ~ .ios_switch_control_indicator::after {
+    left: 0px;
+}
+.custom_control.ios_switch .ios_switch_control_indicator {
+    display: inline-block;
+    position: relative;
+    margin: 0 10px;
+    top: 4px;
+    width: 32px;
+    height: 20px;
+    background: #fff;
+    border-radius: 16px;
+    transition: .3s;
+    border: 2px
+     solid #ddd;
+}
+.custom_control.ios_switch .ios_switch_control_indicator::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+    transition: .3s;
+    top: 0px;
+    left: 0px;
+    background: #fff;
+    box-shadow: 0 0 2px #aaa, 0 2px 5px #999;
+}
+
+
+@media only screen and (max-width: 787px) {
+    .app_card {
+      width: 70%;
+    }
+  }
+  
+  @media only screen and (max-width: 576px) {
+    .app_card {
+      width: 80%;
+      margin: 20px auto;
+      padding: 16px;
+    }
+    .app_card_head h3 {
+      font-size: 28px;
+    }
+  }

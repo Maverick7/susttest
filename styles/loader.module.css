@@ -1,0 +1,34 @@
+.loader {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    z-index: 999999;
+    background:#fff;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url(../public/images/loader/Spinner.svg);
+    background-size: 180px;
+  }
+  /* .hpreloader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    z-index: 999999;
+    background:#fff;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url(../assets/header/logo.png);
+    background-size: 500px;
+  } */
+
+  @media only screen and (max-width: 767px){
+    .loader {
+      background-size: 100px;
+    }
+  }

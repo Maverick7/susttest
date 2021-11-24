@@ -1,0 +1,36 @@
+
+.submission_tabs {
+    background: #fff;
+    box-shadow: 0 0 1px rgb(0 0 0 / 0%);
+    margin: 30px 0 !important;
+  }
+  .submission_tabs .nav-item .nav-link {
+    text-transform: uppercase !important;
+    color: #1fbadb !important;
+  }
+  .submission_tabs .nav-item .nav-link.active {
+    background-image: linear-gradient(228deg, #1fbadb 35%, #2c4495 100%);
+    color: #fff !important;
+  }
+  .submission_tabs .nav-item .nav-link {
+    position: relative;
+    text-align: center;
+    display: block;
+    font-size: 18px;
+    background: none;
+    color: #626262;
+    font-weight: 600;
+    line-height: 24px;
+    cursor: pointer;
+    border-radius: 3px;
+    background-color: #ffffff;
+    padding: 10px 44px 10px;
+    text-transform: capitalize;
+    transition: all 400ms ease;
+  }
+  @media only screen and (max-width: 576px) {
+    .submission_tabs.nav-pills .nav-item {
+      width: 100%;
+      margin-top: 1px;
+    }
+  }

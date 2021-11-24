@@ -1,0 +1,142 @@
+.member_list_wrap {
+  display: flex;
+  justify-content: center;
+  align-content:center;
+  flex-direction: column;
+  border:1px solid #999;
+  border-radius:10px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.mber_btn_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.mber_btn_wrap .mber_title h4 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+.mber_content {
+  padding: 7px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.mber_content p {
+  font-family: "Lato";
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+.mber_action {
+}
+.upload_btn_wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.btn_row {
+  flex-basis: 45%;
+}
+@media only screen and (max-width: 475px) {
+  .upload_btn_wrapper {
+    justify-content: center;
+  }
+  .btn_row {
+    flex-basis: 100%;
+  }
+}
+
+/* input fields */
+.team_form_grp {
+  margin-bottom: 0;
+}
+.team_form_grp .team_input {
+}
+
+/* 2 parts field and remove */
+.team_form_row {
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.team_form_col1 {
+  -webkit-flex: 0 0 85%;
+  -moz-box-flex: 0;
+  flex: 0 0 85%;
+  max-width: 85%;
+}
+.team_form_col2 {
+  -webkit-flex: 0 0 10%;
+  -moz-box-flex: 0;
+  flex: 0 0 10%;
+  max-width: 10%;
+}
+/* @media (max-width: 768px){
+.team_form_col1 {
+    -webkit-flex: 0 0 70%;
+    -moz-box-flex: 0;
+    flex: 0 0 90%;
+    max-width: 90%;
+}
+.team_form_col2 {
+    -webkit-flex: 0 0 10%;
+    -moz-box-flex: 0;
+    flex: 0 0 10%;
+    max-width: 10%;
+}
+} */
+@media only screen and (max-width: 576px) {
+  .team_form_row {
+    margin-bottom: 12px;
+  }
+  .team_form_col1 {
+    -webkit-flex: 0 0 100%;
+    -moz-box-flex: 0;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .team_form_col2 {
+    -webkit-flex: 0 0 100%;
+    -moz-box-flex: 0;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+.addmber_btn {
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+}
+.addmber_btn:active {
+  transform: translateY(1px);
+}
+
+.removember_btn {
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+}
+
+.removember_btn:active {
+  transform: translateY(1px);
+}

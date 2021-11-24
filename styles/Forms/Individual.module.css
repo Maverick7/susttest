@@ -1,0 +1,19 @@
+.upload_btn_wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.btn_row {
+  flex-basis: 45%;
+}
+@media only screen and (max-width: 475px) {
+  .upload_btn_wrapper {
+    justify-content: center;
+  }
+  .btn_row {
+    flex-basis: 100%;
+  }
+  
+}
